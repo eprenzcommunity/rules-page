@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Eprenz Gamification Playbook</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            :root {
+                --brand: #3aabef;
+                --bg: #f5f7fb;
+                --card: #ffffff;
+                --muted: #64748b;
+                --accent: #e6f4fd;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                margin: 0;
+                font-family: "Lato", sans-serif;
+                background: var(--bg);
+                color: #0f172a;
+            }
+            header {
+                background: var(--brand);
+                color: #fff;
+                padding: 32px 20px;
+                text-align: center;
+            }
+            header h1 {
+                margin: 8px 0 0;
+                font-size: 32px;
+            }
+            header p {
+                margin: 8px 0 0;
+                max-width: 700px;
+                margin-inline: auto;
+                color: rgba(255, 255, 255, 0.9);
+            }
+
+            .container {
+                max-width: 1000px;
+                margin: 32px auto;
+                padding: 0 16px;
+            }
+            .tabs {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+            .tab {
+                cursor: pointer;
+                padding: 10px 16px;
+                border-radius: 8px;
+                background: var(--accent);
+                font-weight: 700;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                transition: 0.2s;
+            }
+            .tab.active {
+                background: var(--brand);
+                color: #fff;
+            }
+
+            .module {
+                display: none;
+                background: var(--card);
+                border-radius: 16px;
+                padding: 24px;
+                box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+            }
+            .module.active {
+                display: block;
+            }
+
+            .module h2 {
+                margin-top: 0;
+                font-size: 22px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+            .badge {
+                display: inline-flex;
+                align-items: center;
+                gap: 6px;
+                padding: 4px 8px;
+                border-radius: 999px;
+                font-weight: 700;
+                font-size: 12px;
+                background: rgba(58, 171, 239, 0.12);
+                color: #0f2942;
+                margin-top: 6px;
+            }
+
+            .action-grid {
+                display: grid;
+                grid-template-columns: 1fr auto;
+                gap: 12px;
+                margin-top: 12px;
+            }
+            .action {
+                background: #f9fafb;
+                padding: 12px;
+                border-radius: 12px;
+            }
+            .points {
+                font-weight: 700;
+                color: var(--brand);
+                text-align: right;
+            }
+            a.btn {
+                display: inline-block;
+                padding: 8px 12px;
+                background: var(--brand);
+                color: #fff;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 700;
+                margin-top: 8px;
+            }
+            a.btn.secondary {
+                background: #0f2942;
+            }
+
+            .muted {
+                color: var(--muted);
+                font-size: 14px;
+                margin-top: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Gamification Playbook</h1>
+            <p>
+                Follow the steps to earn points, unlock bonuses, and climb the
+                leaderboard. Click each step to see the actions and how to
+                score.
+            </p>
+        </header>
+
+        <div class="container">
+            <!-- Tabs -->
+            <div class="tabs">
+                <div class="tab active" data-step="1">📝 Step 1</div>
+                <div class="tab" data-step="2">💬 Step 2</div>
+                <div class="tab" data-step="3">🎤 Step 3</div>
+                <div class="tab" data-step="4">💼 Step 4</div>
+                <div class="tab" data-step="5">🎁 Step 5</div>
+                <div class="tab" data-step="6">💰 Step 6</div>
+            </div>
+
+            <!-- Step 1: Event Registration -->
+            <div class="module active" data-step="1">
+                <h2>📝 Event Registration</h2>
+                <p>Rewarding you for driving people to the summit.</p>
+
+                <div class="action-grid">
+                    <div class="action">
+                        <strong>Check your referral link</strong>
+                        <div class="muted">
+                            Check your email/spam for your unique referral link.
+                            If missing, contact partnership@eprenz.com
+                        </div>
+                        <a class="btn" href="mailto:partnership@eprenz.com"
+                            >Request Referral Link</a
+                        >
+                    </div>
+                    <div class="points">
+                        <div class="badge">1 pt per free ticket</div>
+                        <div class="badge">2 pts per $1 from paid tickets</div>
+                    </div>
+                </div>
+
+                <a
+                    class="btn secondary"
+                    href="https://workdrive.zohoexternal.com/folder/cx8mt39833653106c494789c3c4e0e35ed847"
+                    target="_blank"
+                    >Download Posters & Assets</a
+                >
+            </div>
+
+            <!-- Step 2: Club Engagement -->
+            <div class="module" data-step="2">
+                <h2>💬 Eprenz Club Engagement</h2>
+                <p>
+                    Points for engaging inside the Eprenz Club. Engagement is
+                    continuous—the more you interact, the more you earn.
+                </p>
+
+                <div class="action-grid">
+                    <div class="action">Visit Event Channel</div>
+                    <div class="points">
+                        <span class="badge">1 pt per visit</span>
+                    </div>
+                    <div class="action">Add a Comment</div>
+                    <div class="points">
+                        <span class="badge">1 pt per comment</span>
+                    </div>
+                    <div class="action">Add a Reaction</div>
+                    <div class="points">
+                        <span class="badge">1 pt per reaction</span>
+                    </div>
+                    <div class="action">Make a Contribution</div>
+                    <div class="points">
+                        <span class="badge">1 pt per contribution</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3: Summit Participation -->
+            <div class="module" data-step="3">
+                <h2>🎤 Summit Participation (Backstage)</h2>
+                <p>
+                    Earn points for setting up your profile, joining sessions,
+                    networking, and engaging with sponsors.
+                </p>
+
+                <div class="action-grid">
+                    <div class="action">
+                        <strong>Profile & Event Setup</strong>
+                        <div class="muted">
+                            Upload profile image, bio, and photos
+                        </div>
+                    </div>
+                    <div class="points">
+                        <div class="badge">10 pts Upload Profile Image</div>
+                        <div class="badge">10 pts Add Profile Bio</div>
+                        <div class="badge">10 pts Upload Photo (max 5)</div>
+                    </div>
+
+                    <div class="action">
+                        <strong>Session Engagement</strong>
+                        <div class="muted">
+                            Join sessions, participate in Q&A, polls, chat, and
+                            give feedback.
+                        </div>
+                    </div>
+                    <div class="points">
+                        <div class="badge">20 pts Join Session</div>
+                        <div class="badge">5 pts Q&A/Polls/Chat</div>
+                        <div class="badge">10 pts Feedback (max 12)</div>
+                    </div>
+
+                    <div class="action">
+                        <strong>Networking Engagement</strong>
+                        <div class="muted">
+                            Virtual lounge, meet attendees, discussion channels.
+                        </div>
+                    </div>
+                    <div class="points">
+                        <div class="badge">20 pts Virtual Lounge</div>
+                        <div class="badge">10 pts Meet Attendee</div>
+                        <div class="badge">10 pts Discussion Channel</div>
+                    </div>
+
+                    <div class="action">
+                        <strong>Exhibitor / Sponsor Engagement</strong>
+                        <div class="muted">
+                            Meet exhibitors, submit inquiries, add to favorites.
+                        </div>
+                    </div>
+                    <div class="points">
+                        <div class="badge">20 pts Meet Exhibitor</div>
+                        <div class="badge">20 pts Submit Inquiry</div>
+                        <div class="badge">20 pts Add to Favorites</div>
+                    </div>
+                </div>
+
+                <a
+                    class="btn"
+                    href="https://eprenz.zohobackstage.com/global-founders-and-innovators-summit-2026#/?showSignIn=true"
+                    target="_blank"
+                    >Open Summit Platform</a
+                >
+            </div>
+
+            <!-- Step 4: Deal Room -->
+            <div class="module" data-step="4">
+                <h2>💼 Deal Room Participation</h2>
+                <p>
+                    Drive real business outcomes through partner deal rooms.
+                    Codes can be found inside each room.
+                </p>
+
+                <div class="action-grid">
+                    <div class="action">Enter Deal Rooms</div>
+                    <div class="points">
+                        <div class="badge">25 pts per unique code</div>
+                        <div class="badge">1 pt per $1 purchases</div>
+                        <div class="badge">+25 pts bonus any purchase</div>
+                        <div class="badge">+50 pts completing all codes</div>
+                    </div>
+                    <div class="action">
+                        <a
+                            class="btn"
+                            href="https://zfrmz.com/IF4dYHl3Cv6je8fBiGAY"
+                            target="_blank"
+                            >Submit Codes</a
+                        >
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5: Bonus Points -->
+            <div class="module" data-step="5">
+                <h2>🎁 Bonus Points</h2>
+                <p>
+                    Extra rewards for high-value contributions and commitment.
+                </p>
+
+                <div class="action-grid">
+                    <div class="action">Sponsor warm referral</div>
+                    <div class="points"><span class="badge">+50 pts</span></div>
+                    <div class="action">Closed deal via sponsor referral</div>
+                    <div class="points">
+                        <span class="badge">+250 pts</span>
+                    </div>
+                    <div class="action">Attend both summit days</div>
+                    <div class="points"><span class="badge">+40 pts</span></div>
+                </div>
+
+                <a class="btn" href="mailto:partnership@eprenz.com">Email Us</a>
+            </div>
+
+            <!-- Step 6: Revenue Share -->
+            <div class="module" data-step="6">
+                <h2>💰 Revenue Share Program</h2>
+                <p>Participants earn 20% revenue share on:</p>
+                <ul>
+                    <li>Summit ticket sales made via their referral link</li>
+                    <li>
+                        Sponsor warm referral closings (you introduce, Eprenz
+                        completes the deal)
+                    </li>
+                </ul>
+                <a class="btn" href="mailto:partnership@eprenz.com"
+                    >Submit Sponsor Lead</a
+                >
+            </div>
+        </div>
+
+        <script>
+            const tabs = document.querySelectorAll(".tab");
+            const modules = document.querySelectorAll(".module");
+
+            tabs.forEach((tab) => {
+                tab.addEventListener("click", () => {
+                    const step = tab.dataset.step;
+
+                    tabs.forEach((t) => t.classList.remove("active"));
+                    tab.classList.add("active");
+
+                    modules.forEach((m) => m.classList.remove("active"));
+                    document
+                        .querySelector(`.module[data-step="${step}"]`)
+                        .classList.add("active");
+                });
+            });
+        </script>
+    </body>
+</html>
