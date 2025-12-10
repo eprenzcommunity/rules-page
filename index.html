@@ -40,7 +40,9 @@
             id="playbook"
             class="w-full max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-10 py-12 lg:py-14"
         >
-            <div class="grid gap-10 lg:grid-cols-[minmax(380px,480px)_1fr] items-start">
+            <div
+                class="grid gap-10 lg:grid-cols-[minmax(380px,480px)_1fr] items-start"
+            >
                 <!-- Left gradient card -->
                 <aside
                     class="relative rounded-[28px] bg-gradient-to-br from-[#0f2942] via-[#1b4fd9] to-brand p-8 lg:p-10 text-white shadow-hero overflow-hidden"
@@ -59,12 +61,15 @@
                             </h2>
                         </div>
                         <p class="text-white/85 text-base leading-relaxed">
-                            Tap on a level to reveal the checklist, points, and links required to
-                            complete it. Stay consistent to maximize your revenue share.
+                            Unlock points, level up, and stay ahead of the
+                            competition. Each level shows you exactly what to do
+                            next, with clear checklists, actions, and links to
+                            complete every task.
                         </p>
                         <p class="text-white/85 text-base leading-relaxed">
-                            Everything you need is in one place: referral assets, club engagement
-                            prompts, backstage checklist, and deal room rewards.
+                            Everything you need to progress is organized for
+                            you: referral tools, community engagement actions,
+                            backstage tasks, and deal room opportunities.
                         </p>
                         <ul class="space-y-3">
                             <li
@@ -74,7 +79,8 @@
                                     class="flex h-8 w-8 items-center justify-center rounded-full border border-white/60 text-sm"
                                     >1</span
                                 >
-                                Invite founders with your referral link
+                                Use your referral link to drive event
+                                registrations
                             </li>
                             <li
                                 class="flex items-center gap-3 rounded-full border border-white/40 bg-white/10 px-4 py-2 text-base font-semibold"
@@ -83,7 +89,7 @@
                                     class="flex h-8 w-8 items-center justify-center rounded-full border border-white/60 text-sm"
                                     >2</span
                                 >
-                                Engage daily in the Eprenz Club
+                                Engage consistently inside the Eprenz Club
                             </li>
                             <li
                                 class="flex items-center gap-3 rounded-full border border-white/40 bg-white/10 px-4 py-2 text-base font-semibold"
@@ -92,7 +98,8 @@
                                     class="flex h-8 w-8 items-center justify-center rounded-full border border-white/60 text-sm"
                                     >3</span
                                 >
-                                Complete backstage and deal room missions
+                                Complete your backstage and deal room tasks to
+                                boost your score
                             </li>
                         </ul>
                         <div>
@@ -182,7 +189,9 @@
                         aria-hidden="false"
                     >
                         <div class="space-y-2">
-                            <h2 class="text-3xl font-black">📝 Event Registration</h2>
+                            <h2 class="text-3xl font-black">
+                                📝 Event Registration
+                            </h2>
                             <p class="text-lg text-muted">
                                 Rewarding you for driving people to the summit.
                             </p>
@@ -212,53 +221,70 @@
                                     ></iframe>
                                 </div>
                                 <p class="mt-3 text-sm text-muted">
-                                    Watch this walkthrough to understand exactly how to complete the
-                                    event registration steps using your referral link.
+                                    Watch this walkthrough to understand exactly
+                                    how to complete the event registration steps
+                                    using your referral link.
                                 </p>
                             </div>
 
-                            <!-- Cards and CTAs on the right -->
+                            <!-- Cards and CTAs on the right (stacked layout like old version) -->
                             <div class="flex flex-col gap-6 lg:col-span-3">
-                                <div class="grid gap-4 lg:grid-cols-2">
+                                <div class="grid gap-4">
+                                    <!-- Top full-width card -->
                                     <div
-                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5 lg:col-span-2"
+                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5"
                                     >
-                                        <strong class="text-xl">Check your referral link</strong>
-                                        <p class="text-muted">
-                                            Locate your unique event referral link in your inbox or
-                                            spam folder. If you cannot find it, contact the
-                                            partnership team so they can resend it.
-                                        </p>
-                                        <div
-                                            class="flex flex-wrap gap-2 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
+                                        <strong class="text-xl"
+                                            >Check your referral link</strong
                                         >
-                                            <span class="rounded-full bg-brand/15 px-3 py-1">
-                                                1 pt per free ticket
-                                            </span>
-                                            <span class="rounded-full bg-brand/15 px-3 py-1">
-                                                2 pts per 1 dollar paid
-                                            </span>
+                                        <p class="text-muted">
+                                            Locate your unique event referral
+                                            link in your inbox or spam folder.
+                                            If you cannot find it, contact
+                                            <a
+                                                href="mailto:partnership@eprenz.com"
+                                                class="underline"
+                                                >partnership@eprenz.com</a
+                                            >
+                                            so the team can resend it.
+                                        </p>
+                                    </div>
+
+                                    <!-- Bottom row with two cards side by side -->
+                                    <div class="grid gap-4 md:grid-cols-2">
+                                        <!-- Share your link -->
+                                        <div
+                                            class="space-y-3 rounded-2xl border border-border bg-accent p-5"
+                                        >
+                                            <strong class="text-xl"
+                                                >Share your link</strong
+                                            >
+                                            <p class="text-muted">
+                                                Share your referral link using
+                                                the media kit assets. Use your
+                                                link in every post so your
+                                                points and rewards track
+                                                correctly.
+                                            </p>
+                                        </div>
+
+                                        <!-- Points breakdown -->
+                                        <div
+                                            class="space-y-3 rounded-2xl border border-border bg-accent p-5"
+                                        >
+                                            <strong class="text-xl"
+                                                >Points breakdown</strong
+                                            >
+                                            <ul
+                                                class="list-disc pl-5 text-muted text-sm space-y-1"
+                                            >
+                                                <li>5 pts per free ticket</li>
+                                                <li>10 pts per $1 paid</li>
+                                            </ul>
                                         </div>
                                     </div>
-                                    <div
-                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5"
-                                    >
-                                        <strong class="text-xl">Share with founders</strong>
-                                        <p class="text-muted">
-                                            Send the registration link to founders who will benefit
-                                            from the summit and highlight the key outcomes.
-                                        </p>
-                                    </div>
-                                    <div
-                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5"
-                                    >
-                                        <strong class="text-xl">Track registrations</strong>
-                                        <p class="text-muted">
-                                            Monitor who signs up through your link so you can follow
-                                            up and help them get the most from the event.
-                                        </p>
-                                    </div>
                                 </div>
+
                                 <div class="flex flex-wrap gap-3">
                                     <a
                                         class="inline-flex rounded-2xl bg-brand px-6 py-3 text-base font-black text-white shadow-md"
@@ -267,10 +293,10 @@
                                     >
                                     <a
                                         class="inline-flex rounded-2xl bg-ink px-6 py-3 text-base font-black text-white"
-                                        href="https://workdrive.zohoexternal.com/folder/cx8mt39833653106c494789c3c4e0e35ed847"
+                                        href="https://workdrive.zohoexternal.com/folder/crtphdfac3a9a9be9426492e00a89aec8ded8"
                                         target="_blank"
                                         rel="noreferrer"
-                                        >Download Posters and Assets</a
+                                        >Download Media Kit</a
                                     >
                                 </div>
                             </div>
@@ -287,10 +313,13 @@
                         aria-hidden="true"
                     >
                         <div class="space-y-2">
-                            <h2 class="text-3xl font-black">💬 Eprenz Club Engagement</h2>
+                            <h2 class="text-3xl font-black">
+                                💬 Eprenz Club Engagement
+                            </h2>
                             <p class="text-lg text-muted">
-                                Points for interacting with the community inside the Eprenz Club. Mix
-                                actions daily to keep the conversation alive.
+                                Points for interacting with the community inside
+                                the Eprenz Club. Mix actions daily to keep the
+                                conversation alive.
                             </p>
                         </div>
                         <div class="grid gap-6 lg:grid-cols-5 lg:items-start">
@@ -318,8 +347,9 @@
                                     ></iframe>
                                 </div>
                                 <p class="mt-3 text-sm text-muted">
-                                    Learn how to navigate the Eprenz Club feed, post comments, and
-                                    earn engagement points consistently.
+                                    Learn how to navigate the Eprenz Club feed,
+                                    post comments, and earn engagement points
+                                    consistently.
                                 </p>
                             </div>
 
@@ -329,16 +359,21 @@
                                     <div
                                         class="space-y-3 rounded-2xl border border-border bg-accent p-5"
                                     >
-                                        <strong class="text-xl">Visit the event channel</strong>
+                                        <strong class="text-xl"
+                                            >Visit the event channel</strong
+                                        >
                                         <p class="text-muted">
-                                            Review pinned updates, announcements, and new assets.
+                                            Review pinned updates,
+                                            announcements, and new assets.
                                         </p>
-                                        <button
-                                            type="button"
+                                        <a
+                                            href="https://community.eprenz.com/spaces/21336595/chat"
+                                            target="_blank"
+                                            rel="noreferrer"
                                             class="inline-flex rounded-xl border border-brand px-4 py-2 text-sm font-bold text-brand"
                                         >
                                             Visit page
-                                        </button>
+                                        </a>
                                         <span
                                             class="inline-flex rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
                                             >1 pt per visit</span
@@ -347,16 +382,20 @@
                                     <div
                                         class="space-y-3 rounded-2xl border border-border bg-accent p-5"
                                     >
-                                        <strong class="text-xl">Add a thoughtful comment</strong>
+                                        <strong class="text-xl"
+                                            >Add a thoughtful comment</strong
+                                        >
                                         <p class="text-muted">
                                             Share advice, wins, or resources.
                                         </p>
-                                        <button
-                                            type="button"
+                                        <a
+                                            href="https://community.eprenz.com/spaces/21010921/feed"
+                                            target="_blank"
+                                            rel="noreferrer"
                                             class="inline-flex rounded-xl border border-brand px-4 py-2 text-sm font-bold text-brand"
                                         >
                                             Add comment
-                                        </button>
+                                        </a>
                                         <span
                                             class="inline-flex rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
                                             >1 pt per comment</span
@@ -365,16 +404,20 @@
                                     <div
                                         class="space-y-3 rounded-2xl border border-border bg-accent p-5"
                                     >
-                                        <strong class="text-xl">React to posts</strong>
+                                        <strong class="text-xl"
+                                            >React to posts</strong
+                                        >
                                         <p class="text-muted">
                                             Keep momentum by cheering others.
                                         </p>
-                                        <button
-                                            type="button"
+                                        <a
+                                            href="https://community.eprenz.com/spaces/21010921/feed"
+                                            target="_blank"
+                                            rel="noreferrer"
                                             class="inline-flex rounded-xl border border-brand px-4 py-2 text-sm font-bold text-brand"
                                         >
                                             Add reactions
-                                        </button>
+                                        </a>
                                         <span
                                             class="inline-flex rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
                                             >1 pt per reaction</span
@@ -383,19 +426,49 @@
                                     <div
                                         class="space-y-3 rounded-2xl border border-border bg-accent p-5"
                                     >
-                                        <strong class="text-xl">Share discussion prompts</strong>
+                                        <strong class="text-xl"
+                                            >Share discussion prompts</strong
+                                        >
                                         <p class="text-muted">
-                                            Kick off topics that encourage replies and networking.
+                                            Kick off topics that encourage
+                                            replies and networking.
                                         </p>
-                                        <button
-                                            type="button"
+                                        <a
+                                            href="https://community.eprenz.com/spaces/21010921/feed"
+                                            target="_blank"
+                                            rel="noreferrer"
                                             class="inline-flex rounded-xl border border-brand px-4 py-2 text-sm font-bold text-brand"
                                         >
                                             Start prompt
-                                        </button>
+                                        </a>
                                         <span
                                             class="inline-flex rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
                                             >3 pts per prompt</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5 lg:col-span-2"
+                                    >
+                                        <strong class="text-xl"
+                                            >Invite someone to the Club
+                                            (new)</strong
+                                        >
+                                        <p class="text-muted">
+                                            Share your Eprenz Club invite link.
+                                            When someone joins the community
+                                            through your link, you earn points.
+                                        </p>
+                                        <a
+                                            href="https://community.eprenz.com"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            class="inline-flex rounded-xl border border-brand px-4 py-2 text-sm font-bold text-brand"
+                                        >
+                                            Invite to Club
+                                        </a>
+                                        <span
+                                            class="inline-flex rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
+                                            >10 pts per new member</span
                                         >
                                     </div>
                                 </div>
@@ -417,8 +490,9 @@
                                 🎤 Summit Participation (Backstage)
                             </h2>
                             <p class="text-lg text-muted">
-                                Earn points for setting up your profile, joining sessions,
-                                networking, and engaging with sponsors.
+                                Earn points for setting up your profile, joining
+                                live sessions, networking, and engaging with
+                                sponsors inside Backstage.
                             </p>
                         </div>
                         <div class="grid gap-6 lg:grid-cols-5 lg:items-start">
@@ -446,8 +520,9 @@
                                     ></iframe>
                                 </div>
                                 <p class="mt-3 text-sm text-muted">
-                                    Quick tour of Backstage so you can set up your profile, join live
-                                    sessions, and use lounges and sponsor areas effectively.
+                                    Quick tour of Backstage so you can set up
+                                    your profile, join live sessions, and use
+                                    lounges and sponsor areas effectively.
                                 </p>
                             </div>
 
@@ -457,75 +532,84 @@
                                     <div
                                         class="space-y-3 rounded-2xl border border-border bg-accent p-5"
                                     >
-                                        <strong class="text-xl">Profile and event setup</strong>
+                                        <strong class="text-xl"
+                                            >Profile and event setup</strong
+                                        >
                                         <p class="text-muted">
-                                            Upload a headshot, bio, and gallery images to stand out
-                                            inside Backstage.
+                                            Upload a headshot, bio, and gallery
+                                            images to stand out inside
+                                            Backstage.
                                         </p>
                                         <div
                                             class="flex flex-wrap gap-2 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
                                         >
                                             <span
                                                 class="rounded-full bg-brand/15 px-3 py-1"
-                                                >10 pts upload image</span
+                                                >10 pts Upload Image</span
                                             >
                                             <span
                                                 class="rounded-full bg-brand/15 px-3 py-1"
-                                                >10 pts add bio</span
+                                                >10 pts Add Bio</span
                                             >
                                             <span
                                                 class="rounded-full bg-brand/15 px-3 py-1"
-                                                >10 pts per photo (max 5)</span
+                                                >10 pts per Photo (max 5)</span
                                             >
                                         </div>
                                     </div>
                                     <div
                                         class="space-y-3 rounded-2xl border border-border bg-accent p-5"
                                     >
-                                        <strong class="text-xl">Session engagement</strong>
+                                        <strong class="text-xl"
+                                            >Session engagement</strong
+                                        >
                                         <p class="text-muted">
-                                            Join sessions live, participate in Q and A, polls, chat
-                                            and submit feedback forms.
+                                            Join sessions live, participate in Q
+                                            and A, polls, chat and submit
+                                            feedback forms.
                                         </p>
                                         <div
                                             class="flex flex-wrap gap-2 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
                                         >
                                             <span
                                                 class="rounded-full bg-brand/15 px-3 py-1"
-                                                >20 pts join session</span
+                                                >20 pts Join Session</span
                                             >
                                             <span
                                                 class="rounded-full bg-brand/15 px-3 py-1"
-                                                >5 pts Q and A, poll, or chat</span
+                                                >5 pts Q and A, Poll, or
+                                                Chat</span
                                             >
                                             <span
                                                 class="rounded-full bg-brand/15 px-3 py-1"
-                                                >10 pts feedback (max 12)</span
+                                                >10 pts Feedback (max 12)</span
                                             >
                                         </div>
                                     </div>
                                     <div
                                         class="space-y-3 rounded-2xl border border-border bg-accent p-5"
                                     >
-                                        <strong class="text-xl">Networking</strong>
+                                        <strong class="text-xl"
+                                            >Networking</strong
+                                        >
                                         <p class="text-muted">
-                                            Spend time in the virtual lounge and introduce yourself to
-                                            new founders.
+                                            Spend time in the virtual lounge and
+                                            introduce yourself to new founders.
                                         </p>
                                         <div
                                             class="flex flex-wrap gap-2 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
                                         >
                                             <span
                                                 class="rounded-full bg-brand/15 px-3 py-1"
-                                                >20 pts lounge</span
+                                                >20 pts Lounge</span
                                             >
                                             <span
                                                 class="rounded-full bg-brand/15 px-3 py-1"
-                                                >10 pts meet attendee</span
+                                                >10 pts Meet Attendee</span
                                             >
                                             <span
                                                 class="rounded-full bg-brand/15 px-3 py-1"
-                                                >10 pts discussion channel</span
+                                                >10 pts Discussion Channel</span
                                             >
                                         </div>
                                     </div>
@@ -536,23 +620,24 @@
                                             Exhibitor and sponsor engagement
                                         </strong>
                                         <p class="text-muted">
-                                            Book meetings, ask questions, and save favorite partners
-                                            for follow up.
+                                            Book meetings, ask questions, and
+                                            save favorite partners for follow
+                                            up.
                                         </p>
                                         <div
                                             class="flex flex-wrap gap-2 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
                                         >
                                             <span
                                                 class="rounded-full bg-brand/15 px-3 py-1"
-                                                >20 pts meet exhibitor</span
+                                                >20 pts Meet Exhibitor</span
                                             >
                                             <span
                                                 class="rounded-full bg-brand/15 px-3 py-1"
-                                                >20 pts inquiry</span
+                                                >20 pts Inquiry</span
                                             >
                                             <span
                                                 class="rounded-full bg-brand/15 px-3 py-1"
-                                                >20 pts add to favorites</span
+                                                >20 pts Add to Favorites</span
                                             >
                                         </div>
                                     </div>
@@ -580,10 +665,12 @@
                         aria-hidden="true"
                     >
                         <div class="space-y-2">
-                            <h2 class="text-3xl font-black">💼 Deal Room Participation</h2>
+                            <h2 class="text-3xl font-black">
+                                💼 Deal Room Participation
+                            </h2>
                             <p class="text-lg text-muted">
-                                Drive real business outcomes through partner deal rooms. Codes can be
-                                found inside each room.
+                                Drive real business outcomes through partner
+                                deal rooms. Codes can be found inside each room.
                             </p>
                         </div>
                         <div class="grid gap-6 lg:grid-cols-5 lg:items-start">
@@ -611,8 +698,9 @@
                                     ></iframe>
                                 </div>
                                 <p class="mt-3 text-sm text-muted">
-                                    Learn where to find partner codes, how to submit them, and how to
-                                    turn room activity into real revenue.
+                                    Learn where to find partner codes, how to
+                                    submit them, and how to turn room activity
+                                    into real revenue.
                                 </p>
                             </div>
 
@@ -622,10 +710,13 @@
                                     <div
                                         class="space-y-3 rounded-2xl border border-border bg-accent p-5"
                                     >
-                                        <strong class="text-xl">Enter partner rooms</strong>
+                                        <strong class="text-xl"
+                                            >Enter partner rooms</strong
+                                        >
                                         <p class="text-muted">
-                                            Visit every room to review offers, collect unique codes,
-                                            and learn about the solution.
+                                            Visit every room to review offers,
+                                            collect unique codes, and learn
+                                            about the solution.
                                         </p>
                                         <div
                                             class="flex flex-wrap gap-2 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
@@ -636,7 +727,7 @@
                                             >
                                             <span
                                                 class="rounded-full bg-brand/15 px-3 py-1"
-                                                >1 pt per 1 dollar purchase</span
+                                                >1 pt per $1 purchase</span
                                             >
                                             <span
                                                 class="rounded-full bg-brand/15 px-3 py-1"
@@ -644,9 +735,18 @@
                                             >
                                             <span
                                                 class="rounded-full bg-brand/15 px-3 py-1"
-                                                >+50 pts all codes collected</span
+                                                >+50 pts all codes
+                                                collected</span
                                             >
                                         </div>
+                                        <a
+                                            href="https://eprenz.com/business-discounts-deals"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            class="inline-flex rounded-xl border border-brand px-4 py-2 text-sm font-bold text-brand"
+                                        >
+                                            View deal rooms
+                                        </a>
                                     </div>
                                 </div>
                                 <div>
@@ -674,7 +774,8 @@
                         <div class="space-y-2">
                             <h2 class="text-3xl font-black">🎁 Bonus Points</h2>
                             <p class="text-lg text-muted">
-                                Extra rewards for high value contributions and commitment.
+                                Extra rewards for high-value contributions and
+                                commitment.
                             </p>
                         </div>
                         <div class="grid gap-6 lg:grid-cols-5 lg:items-start">
@@ -702,8 +803,9 @@
                                     ></iframe>
                                 </div>
                                 <p class="mt-3 text-sm text-muted">
-                                    Breakdown of bonus scenarios so you can plan warm introductions
-                                    and attendance streaks that earn the most points.
+                                    Breakdown of bonus scenarios so you can plan
+                                    warm introductions and attendance streaks
+                                    that earn the most points.
                                 </p>
                             </div>
 
@@ -713,10 +815,12 @@
                                     <div
                                         class="space-y-3 rounded-2xl border border-border bg-accent p-5"
                                     >
-                                        <strong class="text-xl">Sponsor warm referral</strong>
+                                        <strong class="text-xl"
+                                            >Sponsor warm referral</strong
+                                        >
                                         <p class="text-muted">
-                                            Provide a qualified introduction and keep both parties
-                                            looped in.
+                                            Provide a qualified introduction and
+                                            keep both parties looped in.
                                         </p>
                                         <span
                                             class="rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
@@ -726,10 +830,12 @@
                                     <div
                                         class="space-y-3 rounded-2xl border border-border bg-accent p-5"
                                     >
-                                        <strong class="text-xl">Closed deal via referral</strong>
+                                        <strong class="text-xl"
+                                            >Closed deal via referral</strong
+                                        >
                                         <p class="text-muted">
-                                            When the sponsor closes a deal that started from your
-                                            introduction.
+                                            When the sponsor closes a deal that
+                                            started from your introduction.
                                         </p>
                                         <span
                                             class="rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
@@ -739,8 +845,12 @@
                                     <div
                                         class="space-y-3 rounded-2xl border border-border bg-accent p-5"
                                     >
-                                        <strong class="text-xl">Attend both summit days</strong>
-                                        <p class="text-muted">Check in on day 1 and day 2.</p>
+                                        <strong class="text-xl"
+                                            >Attend both summit days</strong
+                                        >
+                                        <p class="text-muted">
+                                            Check in on day 1 and day 2.
+                                        </p>
                                         <span
                                             class="rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
                                             >+40 pts</span
@@ -768,7 +878,9 @@
                         aria-hidden="true"
                     >
                         <div class="space-y-2">
-                            <h2 class="text-3xl font-black">💰 Revenue Share Program</h2>
+                            <h2 class="text-3xl font-black">
+                                💰 Revenue Share Program
+                            </h2>
                             <p class="text-lg text-muted">
                                 Participants earn 20 percent revenue share on:
                             </p>
@@ -798,24 +910,41 @@
                                     ></iframe>
                                 </div>
                                 <p class="mt-3 text-sm text-muted">
-                                    Guidance on how to increase your long term earnings, stack more
-                                    points across levels, and keep submitting high quality leads as
+                                    Guidance on how to increase your long term
+                                    earnings, stack more points across levels,
+                                    and keep submitting high quality leads as
                                     the program evolves.
                                 </p>
                             </div>
 
                             <!-- Content on the right -->
                             <div class="flex flex-col gap-6 lg:col-span-3">
-                                <ul class="list-disc space-y-3 pl-6 text-lg text-ink">
-                                    <li>
-                                        Summit ticket sales made via your referral link. Track sales
-                                        in the dashboard and highlight VIP upgrades.
-                                    </li>
-                                    <li>
-                                        Sponsor warm referral closings. Make the introduction and let
-                                        the Eprenz team close the loop.
-                                    </li>
-                                </ul>
+                                <div class="space-y-4 text-lg text-ink">
+                                    <div>
+                                        <strong class="block"
+                                            >Summit ticket sales</strong
+                                        >
+                                        <p>
+                                            Earn revenue from every paid ticket
+                                            purchased through your referral
+                                            link. Track your earnings in the
+                                            dashboard and highlight VIP
+                                            upgrades.
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <strong class="block"
+                                            >Sponsor warm referral
+                                            closings</strong
+                                        >
+                                        <p>
+                                            Make the introduction and let the
+                                            Eprenz team close the loop. You earn
+                                            revenue when a sponsor deal closes
+                                            from your referral.
+                                        </p>
+                                    </div>
+                                </div>
                                 <div>
                                     <a
                                         class="inline-flex rounded-xl bg-brand px-5 py-3 text-base font-bold text-white"
@@ -855,7 +984,9 @@
             };
 
             tabs.forEach((tab) => {
-                tab.addEventListener("click", () => activateStep(tab.dataset.tab));
+                tab.addEventListener("click", () =>
+                    activateStep(tab.dataset.tab),
+                );
             });
         </script>
     </body>
