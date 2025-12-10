@@ -36,8 +36,12 @@
         </script>
     </head>
     <body class="bg-bg text-ink font-lato antialiased">
-        <main id="playbook" class="w-full max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-10 py-12 lg:py-14">
+        <main
+            id="playbook"
+            class="w-full max-w-[120rem] mx-auto px-4 sm:px-6 lg:px-10 py-12 lg:py-14"
+        >
             <div class="grid gap-10 lg:grid-cols-[minmax(380px,480px)_1fr] items-start">
+                <!-- Left gradient card -->
                 <aside
                     class="relative rounded-[28px] bg-gradient-to-br from-[#0f2942] via-[#1b4fd9] to-brand p-8 lg:p-10 text-white shadow-hero overflow-hidden"
                 >
@@ -55,11 +59,11 @@
                             </h2>
                         </div>
                         <p class="text-white/85 text-base leading-relaxed">
-                            Tap on a step to reveal the checklist, points, and links required to
+                            Tap on a level to reveal the checklist, points, and links required to
                             complete it. Stay consistent to maximize your revenue share.
                         </p>
                         <p class="text-white/85 text-base leading-relaxed">
-                            Everything you need is in one place—referral assets, club engagement
+                            Everything you need is in one place: referral assets, club engagement
                             prompts, backstage checklist, and deal room rewards.
                         </p>
                         <ul class="space-y-3">
@@ -88,7 +92,7 @@
                                     class="flex h-8 w-8 items-center justify-center rounded-full border border-white/60 text-sm"
                                     >3</span
                                 >
-                                Complete backstage & deal room missions
+                                Complete backstage and deal room missions
                             </li>
                         </ul>
                         <div>
@@ -96,600 +100,732 @@
                                 class="inline-flex items-center justify-center rounded-xl bg-white/90 px-6 py-3 text-base font-black text-[#0f2942] transition hover:bg-white"
                                 href="#tabs"
                             >
-                                Explore the steps
+                                Explore the levels
                             </a>
                         </div>
                     </div>
                 </aside>
+
+                <!-- Right column -->
                 <div class="space-y-10">
-                    <div class="space-y-3">
-                        <p class="text-xs font-semibold uppercase tracking-[0.4em] text-muted">
-                            Playbook overview
-                        </p>
-                        <h2 class="text-4xl sm:text-5xl font-black">Six steps to unlock rewards</h2>
+                    <!-- Tabs -->
+                    <div id="tabs" class="flex flex-wrap justify-center gap-3">
+                        <button
+                            class="tab rounded-full border border-brand bg-brand px-7 py-3.5 text-lg sm:text-xl font-extrabold text-white shadow-tabs transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+                            id="tab-1"
+                            type="button"
+                            data-tab="1"
+                            aria-controls="step-1"
+                            aria-selected="true"
+                        >
+                            📝 Level 1
+                        </button>
+                        <button
+                            class="tab rounded-full border border-transparent bg-brand/10 px-7 py-3.5 text-lg sm:text-xl font-extrabold text-ink transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+                            id="tab-2"
+                            type="button"
+                            data-tab="2"
+                            aria-controls="step-2"
+                            aria-selected="false"
+                        >
+                            💬 Level 2
+                        </button>
+                        <button
+                            class="tab rounded-full border border-transparent bg-brand/10 px-7 py-3.5 text-lg sm:text-xl font-extrabold text-ink transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+                            id="tab-3"
+                            type="button"
+                            data-tab="3"
+                            aria-controls="step-3"
+                            aria-selected="false"
+                        >
+                            🎤 Level 3
+                        </button>
+                        <button
+                            class="tab rounded-full border border-transparent bg-brand/10 px-7 py-3.5 text-lg sm:text-xl font-extrabold text-ink transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+                            id="tab-4"
+                            type="button"
+                            data-tab="4"
+                            aria-controls="step-4"
+                            aria-selected="false"
+                        >
+                            💼 Level 4
+                        </button>
+                        <button
+                            class="tab rounded-full border border-transparent bg-brand/10 px-7 py-3.5 text-lg sm:text-xl font-extrabold text-ink transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+                            id="tab-5"
+                            type="button"
+                            data-tab="5"
+                            aria-controls="step-5"
+                            aria-selected="false"
+                        >
+                            🎁 Level 5
+                        </button>
+                        <button
+                            class="tab rounded-full border border-transparent bg-brand/10 px-7 py-3.5 text-lg sm:text-xl font-extrabold text-ink transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+                            id="tab-6"
+                            type="button"
+                            data-tab="6"
+                            aria-controls="step-6"
+                            aria-selected="false"
+                        >
+                            💰 Level 6
+                        </button>
                     </div>
 
-                    <div
-                        id="tabs"
-                        class="flex flex-wrap justify-center gap-3"
+                    <!-- Level 1 -->
+                    <section
+                        class="module-step space-y-6 rounded-[32px] border border-border bg-card p-8 lg:p-10 shadow-card"
+                        data-module="1"
+                        id="step-1"
+                        role="tabpanel"
+                        aria-labelledby="tab-1"
+                        aria-hidden="false"
                     >
-                <button
-                    class="tab rounded-full border border-brand bg-brand px-5 py-3 text-base font-extrabold text-white shadow-tabs transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
-                    id="tab-1"
-                    type="button"
-                    data-tab="1"
-                    aria-controls="step-1"
-                    aria-selected="true"
-                >
-                    📝 Step 1
-                </button>
-                <button
-                    class="tab rounded-full border border-transparent bg-brand/10 px-5 py-3 text-base font-extrabold text-ink transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
-                    id="tab-2"
-                    type="button"
-                    data-tab="2"
-                    aria-controls="step-2"
-                    aria-selected="false"
-                >
-                    💬 Step 2
-                </button>
-                <button
-                    class="tab rounded-full border border-transparent bg-brand/10 px-5 py-3 text-base font-extrabold text-ink transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
-                    id="tab-3"
-                    type="button"
-                    data-tab="3"
-                    aria-controls="step-3"
-                    aria-selected="false"
-                >
-                    🎤 Step 3
-                </button>
-                <button
-                    class="tab rounded-full border border-transparent bg-brand/10 px-5 py-3 text-base font-extrabold text-ink transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
-                    id="tab-4"
-                    type="button"
-                    data-tab="4"
-                    aria-controls="step-4"
-                    aria-selected="false"
-                >
-                    💼 Step 4
-                </button>
-                <button
-                    class="tab rounded-full border border-transparent bg-brand/10 px-5 py-3 text-base font-extrabold text-ink transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
-                    id="tab-5"
-                    type="button"
-                    data-tab="5"
-                    aria-controls="step-5"
-                    aria-selected="false"
-                >
-                    🎁 Step 5
-                </button>
-                <button
-                    class="tab rounded-full border border-transparent bg-brand/10 px-5 py-3 text-base font-extrabold text-ink transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
-                    id="tab-6"
-                    type="button"
-                    data-tab="6"
-                    aria-controls="step-6"
-                    aria-selected="false"
-                >
-                    💰 Step 6
-                </button>
-            </div>
-
-            <section
-                class="module-step space-y-8 rounded-[32px] border border-border bg-card p-8 lg:p-10 shadow-card"
-                data-module="1"
-                id="step-1"
-                role="tabpanel"
-                aria-labelledby="tab-1"
-                aria-hidden="false"
-            >
-                <div class="rounded-[26px] border border-border bg-white shadow-lg overflow-hidden">
-                    <div class="relative aspect-[16/9] w-full bg-black">
-                        <iframe
-                            class="absolute inset-0 h-full w-full"
-                            src="https://www.youtube.com/embed/3f31oufqFSM"
-                            title="Step 1 walkthrough video"
-                            loading="lazy"
-                            allow="
-                                accelerometer;
-                                autoplay;
-                                clipboard-write;
-                                encrypted-media;
-                                gyroscope;
-                                picture-in-picture;
-                            "
-                            allowfullscreen
-                        ></iframe>
-                    </div>
-                </div>
-                <div class="space-y-3">
-                    <h2 class="text-4xl font-black tracking-tight">
-                        📝 Event Registration
-                    </h2>
-                    <p class="text-xl text-muted">
-                        Rewarding you for driving people to the summit.
-                    </p>
-                </div>
-                <div class="grid gap-8 lg:grid-cols-5 lg:items-start">
-                    <div class="flex flex-col gap-8 lg:col-span-3">
-                        <div class="grid gap-5 sm:grid-cols-3">
+                        <div class="space-y-2">
+                            <h2 class="text-3xl font-black">📝 Event Registration</h2>
+                            <p class="text-lg text-muted">
+                                Rewarding you for driving people to the summit.
+                            </p>
+                        </div>
+                        <div class="grid gap-6 lg:grid-cols-5 lg:items-start">
+                            <!-- Video on the left -->
                             <div
-                                class="space-y-4 rounded-[26px] border border-border bg-accent p-6 sm:col-span-2"
-                            >
-                                <strong class="text-2xl leading-tight"
-                                    >Check your referral link</strong
-                                >
-                                <p class="text-lg text-muted">
-                                    Find your unique link in your inbox or spam folder. If you cannot
-                                    locate it, email the partnership team.
-                                </p>
-                            </div>
-                            <div
-                                class="flex flex-col justify-center gap-4 text-[#0f2942] text-left"
+                                class="rounded-2xl border border-border bg-white p-4 shadow-sm lg:col-span-2"
                             >
                                 <div
-                                    class="rounded-2xl bg-brand/15 px-5 py-4 shadow-sm border border-brand/20"
+                                    class="relative aspect-video w-full overflow-hidden rounded-xl bg-black"
                                 >
-                                    <p
-                                        class="text-sm font-black uppercase tracking-[0.3em] text-[#0f2942]/80"
-                                    >
-                                        1 pt
-                                    </p>
-                                    <p class="text-xl font-semibold leading-tight">
-                                        per free ticket
-                                    </p>
+                                    <iframe
+                                        class="absolute inset-0 h-full w-full"
+                                        src="https://www.youtube.com/embed/3f31oufqFSM"
+                                        title="Level 1 walkthrough video"
+                                        loading="lazy"
+                                        allow="
+                                            accelerometer;
+                                            autoplay;
+                                            clipboard-write;
+                                            encrypted-media;
+                                            gyroscope;
+                                            picture-in-picture;
+                                        "
+                                        allowfullscreen
+                                    ></iframe>
                                 </div>
+                                <p class="mt-3 text-sm text-muted">
+                                    Watch this walkthrough to understand exactly how to complete the
+                                    event registration steps using your referral link.
+                                </p>
+                            </div>
+
+                            <!-- Cards and CTAs on the right -->
+                            <div class="flex flex-col gap-6 lg:col-span-3">
+                                <div class="grid gap-4 lg:grid-cols-2">
+                                    <div
+                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5 lg:col-span-2"
+                                    >
+                                        <strong class="text-xl">Check your referral link</strong>
+                                        <p class="text-muted">
+                                            Locate your unique event referral link in your inbox or
+                                            spam folder. If you cannot find it, contact the
+                                            partnership team so they can resend it.
+                                        </p>
+                                        <div
+                                            class="flex flex-wrap gap-2 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
+                                        >
+                                            <span class="rounded-full bg-brand/15 px-3 py-1">
+                                                1 pt per free ticket
+                                            </span>
+                                            <span class="rounded-full bg-brand/15 px-3 py-1">
+                                                2 pts per 1 dollar paid
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5"
+                                    >
+                                        <strong class="text-xl">Share with founders</strong>
+                                        <p class="text-muted">
+                                            Send the registration link to founders who will benefit
+                                            from the summit and highlight the key outcomes.
+                                        </p>
+                                    </div>
+                                    <div
+                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5"
+                                    >
+                                        <strong class="text-xl">Track registrations</strong>
+                                        <p class="text-muted">
+                                            Monitor who signs up through your link so you can follow
+                                            up and help them get the most from the event.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex flex-wrap gap-3">
+                                    <a
+                                        class="inline-flex rounded-2xl bg-brand px-6 py-3 text-base font-black text-white shadow-md"
+                                        href="mailto:partnership@eprenz.com"
+                                        >Request Referral Link</a
+                                    >
+                                    <a
+                                        class="inline-flex rounded-2xl bg-ink px-6 py-3 text-base font-black text-white"
+                                        href="https://workdrive.zohoexternal.com/folder/cx8mt39833653106c494789c3c4e0e35ed847"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        >Download Posters and Assets</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Level 2 -->
+                    <section
+                        class="module-step hidden space-y-6 rounded-3xl border border-border bg-card p-8 shadow-card"
+                        data-module="2"
+                        id="step-2"
+                        role="tabpanel"
+                        aria-labelledby="tab-2"
+                        aria-hidden="true"
+                    >
+                        <div class="space-y-2">
+                            <h2 class="text-3xl font-black">💬 Eprenz Club Engagement</h2>
+                            <p class="text-lg text-muted">
+                                Points for interacting with the community inside the Eprenz Club. Mix
+                                actions daily to keep the conversation alive.
+                            </p>
+                        </div>
+                        <div class="grid gap-6 lg:grid-cols-5 lg:items-start">
+                            <!-- Video on the left -->
+                            <div
+                                class="rounded-2xl border border-border bg-white p-4 shadow-sm lg:col-span-2"
+                            >
                                 <div
-                                    class="rounded-2xl bg-brand/15 px-5 py-4 shadow-sm border border-brand/20"
+                                    class="relative aspect-video w-full overflow-hidden rounded-xl bg-black"
                                 >
-                                    <p
-                                        class="text-sm font-black uppercase tracking-[0.3em] text-[#0f2942]/80"
+                                    <iframe
+                                        class="absolute inset-0 h-full w-full"
+                                        src="https://www.youtube.com/embed/3f31oufqFSM"
+                                        title="Level 2 walkthrough video"
+                                        loading="lazy"
+                                        allow="
+                                            accelerometer;
+                                            autoplay;
+                                            clipboard-write;
+                                            encrypted-media;
+                                            gyroscope;
+                                            picture-in-picture;
+                                        "
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                                <p class="mt-3 text-sm text-muted">
+                                    Learn how to navigate the Eprenz Club feed, post comments, and
+                                    earn engagement points consistently.
+                                </p>
+                            </div>
+
+                            <!-- Cards on the right -->
+                            <div class="flex flex-col gap-6 lg:col-span-3">
+                                <div class="grid gap-4 lg:grid-cols-2">
+                                    <div
+                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5"
                                     >
-                                        2 pts
-                                    </p>
-                                    <p class="text-xl font-semibold leading-tight">
-                                        per $1 paid
-                                    </p>
+                                        <strong class="text-xl">Visit the event channel</strong>
+                                        <p class="text-muted">
+                                            Review pinned updates, announcements, and new assets.
+                                        </p>
+                                        <button
+                                            type="button"
+                                            class="inline-flex rounded-xl border border-brand px-4 py-2 text-sm font-bold text-brand"
+                                        >
+                                            Visit page
+                                        </button>
+                                        <span
+                                            class="inline-flex rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
+                                            >1 pt per visit</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5"
+                                    >
+                                        <strong class="text-xl">Add a thoughtful comment</strong>
+                                        <p class="text-muted">
+                                            Share advice, wins, or resources.
+                                        </p>
+                                        <button
+                                            type="button"
+                                            class="inline-flex rounded-xl border border-brand px-4 py-2 text-sm font-bold text-brand"
+                                        >
+                                            Add comment
+                                        </button>
+                                        <span
+                                            class="inline-flex rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
+                                            >1 pt per comment</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5"
+                                    >
+                                        <strong class="text-xl">React to posts</strong>
+                                        <p class="text-muted">
+                                            Keep momentum by cheering others.
+                                        </p>
+                                        <button
+                                            type="button"
+                                            class="inline-flex rounded-xl border border-brand px-4 py-2 text-sm font-bold text-brand"
+                                        >
+                                            Add reactions
+                                        </button>
+                                        <span
+                                            class="inline-flex rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
+                                            >1 pt per reaction</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5"
+                                    >
+                                        <strong class="text-xl">Share discussion prompts</strong>
+                                        <p class="text-muted">
+                                            Kick off topics that encourage replies and networking.
+                                        </p>
+                                        <button
+                                            type="button"
+                                            class="inline-flex rounded-xl border border-brand px-4 py-2 text-sm font-bold text-brand"
+                                        >
+                                            Start prompt
+                                        </button>
+                                        <span
+                                            class="inline-flex rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
+                                            >3 pts per prompt</span
+                                        >
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-wrap gap-3">
-                            <a
-                                class="inline-flex rounded-2xl bg-brand px-6 py-3 text-base font-black text-white shadow-md"
-                                href="mailto:partnership@eprenz.com"
-                                >Request Referral Link</a
-                            >
-                            <a
-                                class="inline-flex rounded-2xl bg-ink px-6 py-3 text-base font-black text-white"
-                                href="https://workdrive.zohoexternal.com/folder/cx8mt39833653106c494789c3c4e0e35ed847"
-                                target="_blank"
-                                rel="noreferrer"
-                                >Download Posters & Assets</a
-                            >
-                        </div>
-                    </div>
-                    <div class="space-y-3 lg:col-span-2">
-                        <p class="text-base text-muted">
-                            Watch how to locate and share your referral link, plus where to grab
-                            promo assets.
-                        </p>
-                    </div>
-                </div>
-            </section>
+                    </section>
 
-            <section
-                class="module-step hidden space-y-6 rounded-3xl border border-border bg-card p-8 shadow-card"
-                data-module="2"
-                id="step-2"
-                role="tabpanel"
-                aria-labelledby="tab-2"
-                aria-hidden="true"
-            >
-                <div class="space-y-2">
-                    <h2 class="text-3xl font-black">💬 Eprenz Club Engagement</h2>
-                    <p class="text-lg text-muted">
-                        Points for interacting with the community inside the Eprenz Club. Mix
-                        actions daily to keep the conversation alive.
-                    </p>
-                </div>
-                <div class="grid gap-6 lg:grid-cols-5">
-                    <div class="flex flex-col gap-6 lg:col-span-3">
-                        <div class="grid gap-4 lg:grid-cols-2">
-                            <div class="space-y-3 rounded-2xl border border-border bg-accent p-5">
-                                <strong class="text-xl">Visit the event channel</strong>
-                                <p class="text-muted">
-                                    Review pinned updates, announcements, and new assets.
-                                </p>
-                                <button
-                                    type="button"
-                                    class="inline-flex rounded-xl border border-brand px-4 py-2 text-sm font-bold text-brand"
-                                >
-                                    Visit page
-                                </button>
-                                <span class="inline-flex rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
-                                    >1 pt per visit</span
-                                >
-                            </div>
-                            <div class="space-y-3 rounded-2xl border border-border bg-accent p-5">
-                                <strong class="text-xl">Add a thoughtful comment</strong>
-                                <p class="text-muted">Share advice, wins, or resources.</p>
-                                <button
-                                    type="button"
-                                    class="inline-flex rounded-xl border border-brand px-4 py-2 text-sm font-bold text-brand"
-                                >
-                                    Add comment
-                                </button>
-                                <span class="inline-flex rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
-                                    >1 pt per comment</span
-                                >
-                            </div>
-                            <div class="space-y-3 rounded-2xl border border-border bg-accent p-5">
-                                <strong class="text-xl">React to posts</strong>
-                                <p class="text-muted">Keep momentum by cheering others.</p>
-                                <button
-                                    type="button"
-                                    class="inline-flex rounded-xl border border-brand px-4 py-2 text-sm font-bold text-brand"
-                                >
-                                    Add reactions
-                                </button>
-                                <span class="inline-flex rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
-                                    >1 pt per reaction</span
-                                >
-                            </div>
-                            <div class="space-y-3 rounded-2xl border border-border bg-accent p-5">
-                                <strong class="text-xl">Share discussion prompts</strong>
-                                <p class="text-muted">
-                                    Kick off topics that encourage replies and networking.
-                                </p>
-                                <button
-                                    type="button"
-                                    class="inline-flex rounded-xl border border-brand px-4 py-2 text-sm font-bold text-brand"
-                                >
-                                    Start prompt
-                                </button>
-                                <span class="inline-flex rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
-                                    >3 pts per prompt</span
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="rounded-2xl border border-border bg-white p-4 shadow-sm lg:col-span-2"
+                    <!-- Level 3 -->
+                    <section
+                        class="module-step hidden space-y-6 rounded-3xl border border-border bg-card p-8 shadow-card"
+                        data-module="3"
+                        id="step-3"
+                        role="tabpanel"
+                        aria-labelledby="tab-3"
+                        aria-hidden="true"
                     >
-                        <div class="relative aspect-video w-full overflow-hidden rounded-xl bg-black">
-                            <iframe
-                                class="absolute inset-0 h-full w-full"
-                                src="https://www.youtube.com/embed/3f31oufqFSM"
-                                title="Step 2 walkthrough video"
-                                loading="lazy"
-                                allow="
-                                    accelerometer;
-                                    autoplay;
-                                    clipboard-write;
-                                    encrypted-media;
-                                    gyroscope;
-                                    picture-in-picture;
-                                "
-                                allowfullscreen
-                            ></iframe>
+                        <div class="space-y-2">
+                            <h2 class="text-3xl font-black">
+                                🎤 Summit Participation (Backstage)
+                            </h2>
+                            <p class="text-lg text-muted">
+                                Earn points for setting up your profile, joining sessions,
+                                networking, and engaging with sponsors.
+                            </p>
                         </div>
-                        <p class="mt-3 text-sm text-muted">
-                            See how to engage inside the club feed, where to leave comments, and how
-                            points are tracked.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section
-                class="module-step hidden space-y-6 rounded-3xl border border-border bg-card p-8 shadow-card"
-                data-module="3"
-                id="step-3"
-                role="tabpanel"
-                aria-labelledby="tab-3"
-                aria-hidden="true"
-            >
-                <div class="space-y-2">
-                    <h2 class="text-3xl font-black">🎤 Summit Participation (Backstage)</h2>
-                    <p class="text-lg text-muted">
-                        Earn points for setting up your profile, joining sessions, networking, and
-                        engaging with sponsors.
-                    </p>
-                </div>
-                <div class="grid gap-6 lg:grid-cols-5">
-                    <div class="flex flex-col gap-6 lg:col-span-3">
-                        <div class="grid gap-4 lg:grid-cols-2">
-                            <div class="space-y-3 rounded-2xl border border-border bg-accent p-5">
-                                <strong class="text-xl">Profile & event setup</strong>
-                                <p class="text-muted">
-                                    Upload a headshot, bio, and gallery images to stand out inside
-                                    Backstage.
-                                </p>
-                                <div class="flex flex-wrap gap-2 text-xs font-bold uppercase tracking-wide text-[#0f2942]">
-                                    <span class="rounded-full bg-brand/15 px-3 py-1">10 pts upload image</span>
-                                    <span class="rounded-full bg-brand/15 px-3 py-1">10 pts add bio</span>
-                                    <span class="rounded-full bg-brand/15 px-3 py-1">10 pts per photo (max 5)</span>
-                                </div>
-                            </div>
-                            <div class="space-y-3 rounded-2xl border border-border bg-accent p-5">
-                                <strong class="text-xl">Session engagement</strong>
-                                <p class="text-muted">
-                                    Join sessions live, participate in Q&A, polls, chat and submit feedback forms.
-                                </p>
-                                <div class="flex flex-wrap gap-2 text-xs font-bold uppercase tracking-wide text-[#0f2942]">
-                                    <span class="rounded-full bg-brand/15 px-3 py-1">20 pts join session</span>
-                                    <span class="rounded-full bg-brand/15 px-3 py-1">5 pts Q&A/poll/chat</span>
-                                    <span class="rounded-full bg-brand/15 px-3 py-1">10 pts feedback (max 12)</span>
-                                </div>
-                            </div>
-                            <div class="space-y-3 rounded-2xl border border-border bg-accent p-5">
-                                <strong class="text-xl">Networking</strong>
-                                <p class="text-muted">
-                                    Spend time in the virtual lounge and introduce yourself to new
-                                    founders.
-                                </p>
-                                <div class="flex flex-wrap gap-2 text-xs font-bold uppercase tracking-wide text-[#0f2942]">
-                                    <span class="rounded-full bg-brand/15 px-3 py-1">20 pts lounge</span>
-                                    <span class="rounded-full bg-brand/15 px-3 py-1">10 pts meet attendee</span>
-                                    <span class="rounded-full bg-brand/15 px-3 py-1">10 pts discussion channel</span>
-                                </div>
-                            </div>
-                            <div class="space-y-3 rounded-2xl border border-border bg-accent p-5">
-                                <strong class="text-xl">Exhibitor & sponsor engagement</strong>
-                                <p class="text-muted">
-                                    Book meetings, ask questions, and save favorite partners for follow-up.
-                                </p>
-                                <div class="flex flex-wrap gap-2 text-xs font-bold uppercase tracking-wide text-[#0f2942]">
-                                    <span class="rounded-full bg-brand/15 px-3 py-1">20 pts meet exhibitor</span>
-                                    <span class="rounded-full bg-brand/15 px-3 py-1">20 pts inquiry</span>
-                                    <span class="rounded-full bg-brand/15 px-3 py-1">20 pts add to favorites</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <a
-                                class="inline-flex rounded-xl bg-brand px-5 py-3 text-base font-bold text-white"
-                                href="https://eprenz.zohobackstage.com/global-founders-and-innovators-summit-2026#/?showSignIn=true"
-                                target="_blank"
-                                rel="noreferrer"
-                                >Open Summit Platform</a
+                        <div class="grid gap-6 lg:grid-cols-5 lg:items-start">
+                            <!-- Video on the left -->
+                            <div
+                                class="rounded-2xl border border-border bg-white p-4 shadow-sm lg:col-span-2"
                             >
-                        </div>
-                    </div>
-                    <div
-                        class="rounded-2xl border border-border bg-white p-4 shadow-sm lg:col-span-2"
-                    >
-                        <div class="relative aspect-video w-full overflow-hidden rounded-xl bg-black">
-                            <iframe
-                                class="absolute inset-0 h-full w-full"
-                                src="https://www.youtube.com/embed/3f31oufqFSM"
-                                title="Step 3 walkthrough video"
-                                loading="lazy"
-                                allow="
-                                    accelerometer;
-                                    autoplay;
-                                    clipboard-write;
-                                    encrypted-media;
-                                    gyroscope;
-                                    picture-in-picture;
-                                "
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                        <p class="mt-3 text-sm text-muted">
-                            Quick tour of Backstage showing profiles, sessions, networking lounges,
-                            and sponsor areas.
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section
-                class="module-step hidden space-y-6 rounded-3xl border border-border bg-card p-8 shadow-card"
-                data-module="4"
-                id="step-4"
-                role="tabpanel"
-                aria-labelledby="tab-4"
-                aria-hidden="true"
-            >
-                <div class="space-y-2">
-                    <h2 class="text-3xl font-black">💼 Deal Room Participation</h2>
-                    <p class="text-lg text-muted">
-                        Drive real business outcomes through partner deal rooms. Codes can be found
-                        inside each room.
-                    </p>
-                </div>
-                <div class="grid gap-6 lg:grid-cols-5">
-                    <div class="flex flex-col gap-6 lg:col-span-3">
-                        <div class="grid gap-4">
-                            <div class="space-y-3 rounded-2xl border border-border bg-accent p-5">
-                                <strong class="text-xl">Enter partner rooms</strong>
-                                <p class="text-muted">
-                                    Visit every room to review offers, collect unique codes, and learn
-                                    about the solution.
+                                <div
+                                    class="relative aspect-video w-full overflow-hidden rounded-xl bg-black"
+                                >
+                                    <iframe
+                                        class="absolute inset-0 h-full w-full"
+                                        src="https://www.youtube.com/embed/3f31oufqFSM"
+                                        title="Level 3 walkthrough video"
+                                        loading="lazy"
+                                        allow="
+                                            accelerometer;
+                                            autoplay;
+                                            clipboard-write;
+                                            encrypted-media;
+                                            gyroscope;
+                                            picture-in-picture;
+                                        "
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                                <p class="mt-3 text-sm text-muted">
+                                    Quick tour of Backstage so you can set up your profile, join live
+                                    sessions, and use lounges and sponsor areas effectively.
                                 </p>
-                                <div class="flex flex-wrap gap-2 text-xs font-bold uppercase tracking-wide text-[#0f2942]">
-                                    <span class="rounded-full bg-brand/15 px-3 py-1">25 pts per unique code</span>
-                                    <span class="rounded-full bg-brand/15 px-3 py-1">1 pt per $1 purchase</span>
-                                    <span class="rounded-full bg-brand/15 px-3 py-1">+25 pts first purchase</span>
-                                    <span class="rounded-full bg-brand/15 px-3 py-1">+50 pts all codes</span>
+                            </div>
+
+                            <!-- Cards on the right -->
+                            <div class="flex flex-col gap-6 lg:col-span-3">
+                                <div class="grid gap-4 lg:grid-cols-2">
+                                    <div
+                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5"
+                                    >
+                                        <strong class="text-xl">Profile and event setup</strong>
+                                        <p class="text-muted">
+                                            Upload a headshot, bio, and gallery images to stand out
+                                            inside Backstage.
+                                        </p>
+                                        <div
+                                            class="flex flex-wrap gap-2 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
+                                        >
+                                            <span
+                                                class="rounded-full bg-brand/15 px-3 py-1"
+                                                >10 pts upload image</span
+                                            >
+                                            <span
+                                                class="rounded-full bg-brand/15 px-3 py-1"
+                                                >10 pts add bio</span
+                                            >
+                                            <span
+                                                class="rounded-full bg-brand/15 px-3 py-1"
+                                                >10 pts per photo (max 5)</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5"
+                                    >
+                                        <strong class="text-xl">Session engagement</strong>
+                                        <p class="text-muted">
+                                            Join sessions live, participate in Q and A, polls, chat
+                                            and submit feedback forms.
+                                        </p>
+                                        <div
+                                            class="flex flex-wrap gap-2 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
+                                        >
+                                            <span
+                                                class="rounded-full bg-brand/15 px-3 py-1"
+                                                >20 pts join session</span
+                                            >
+                                            <span
+                                                class="rounded-full bg-brand/15 px-3 py-1"
+                                                >5 pts Q and A, poll, or chat</span
+                                            >
+                                            <span
+                                                class="rounded-full bg-brand/15 px-3 py-1"
+                                                >10 pts feedback (max 12)</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5"
+                                    >
+                                        <strong class="text-xl">Networking</strong>
+                                        <p class="text-muted">
+                                            Spend time in the virtual lounge and introduce yourself to
+                                            new founders.
+                                        </p>
+                                        <div
+                                            class="flex flex-wrap gap-2 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
+                                        >
+                                            <span
+                                                class="rounded-full bg-brand/15 px-3 py-1"
+                                                >20 pts lounge</span
+                                            >
+                                            <span
+                                                class="rounded-full bg-brand/15 px-3 py-1"
+                                                >10 pts meet attendee</span
+                                            >
+                                            <span
+                                                class="rounded-full bg-brand/15 px-3 py-1"
+                                                >10 pts discussion channel</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5"
+                                    >
+                                        <strong class="text-xl">
+                                            Exhibitor and sponsor engagement
+                                        </strong>
+                                        <p class="text-muted">
+                                            Book meetings, ask questions, and save favorite partners
+                                            for follow up.
+                                        </p>
+                                        <div
+                                            class="flex flex-wrap gap-2 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
+                                        >
+                                            <span
+                                                class="rounded-full bg-brand/15 px-3 py-1"
+                                                >20 pts meet exhibitor</span
+                                            >
+                                            <span
+                                                class="rounded-full bg-brand/15 px-3 py-1"
+                                                >20 pts inquiry</span
+                                            >
+                                            <span
+                                                class="rounded-full bg-brand/15 px-3 py-1"
+                                                >20 pts add to favorites</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a
+                                        class="inline-flex rounded-xl bg-brand px-5 py-3 text-base font-bold text-white"
+                                        href="https://eprenz.zohobackstage.com/global-founders-and-innovators-summit-2026#/?showSignIn=true"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        >Open Summit Platform</a
+                                    >
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <a
-                                class="inline-flex rounded-xl bg-brand px-5 py-3 text-base font-bold text-white"
-                                href="https://zfrmz.com/IF4dYHl3Cv6je8fBiGAY"
-                                target="_blank"
-                                rel="noreferrer"
-                                >Submit Codes</a
-                            >
-                        </div>
-                    </div>
-                    <div
-                        class="rounded-2xl border border-border bg-white p-4 shadow-sm lg:col-span-2"
-                    >
-                        <div class="relative aspect-video w-full overflow-hidden rounded-xl bg-black">
-                            <iframe
-                                class="absolute inset-0 h-full w-full"
-                                src="https://www.youtube.com/embed/3f31oufqFSM"
-                                title="Step 4 walkthrough video"
-                                loading="lazy"
-                                allow="
-                                    accelerometer;
-                                    autoplay;
-                                    clipboard-write;
-                                    encrypted-media;
-                                    gyroscope;
-                                    picture-in-picture;
-                                "
-                                allowfullscreen
-                            ></iframe>
-                        </div>
-                        <p class="mt-3 text-sm text-muted">
-                            Learn where to find the codes, how to submit them, and how bonus
-                            multipliers work.
-                        </p>
-                    </div>
-                </div>
-            </section>
+                    </section>
 
-            <section
-                class="module-step hidden space-y-6 rounded-3xl border border-border bg-card p-8 shadow-card"
-                data-module="5"
-                id="step-5"
-                role="tabpanel"
-                aria-labelledby="tab-5"
-                aria-hidden="true"
-            >
-                <div class="space-y-2">
-                    <h2 class="text-3xl font-black">🎁 Bonus Points</h2>
-                    <p class="text-lg text-muted">Extra rewards for high-value contributions and commitment.</p>
-                </div>
-                <div class="grid gap-6 lg:grid-cols-5">
-                    <div class="flex flex-col gap-6 lg:col-span-3">
-                        <div class="grid gap-4 md:grid-cols-2">
-                            <div class="space-y-3 rounded-2xl border border-border bg-accent p-5">
-                                <strong class="text-xl">Sponsor warm referral</strong>
-                                <p class="text-muted">
-                                    Provide a qualified introduction and keep both parties looped in.
-                                </p>
-                                <span class="rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
-                                    >+50 pts</span
-                                >
-                            </div>
-                            <div class="space-y-3 rounded-2xl border border-border bg-accent p-5">
-                                <strong class="text-xl">Closed deal via referral</strong>
-                                <p class="text-muted">
-                                    When the sponsor closes a deal that started from your introduction.
-                                </p>
-                                <span class="rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
-                                    >+250 pts</span
-                                >
-                            </div>
-                            <div class="space-y-3 rounded-2xl border border-border bg-accent p-5">
-                                <strong class="text-xl">Attend both summit days</strong>
-                                <p class="text-muted">Check in on day 1 and day 2.</p>
-                                <span class="rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
-                                    >+40 pts</span
-                                >
-                            </div>
-                        </div>
-                        <div>
-                            <a
-                                class="inline-flex rounded-xl bg-brand px-5 py-3 text-base font-bold text-white"
-                                href="mailto:partnership@eprenz.com"
-                                >Email Updates</a
-                            >
-                        </div>
-                    </div>
-                    <div
-                        class="rounded-2xl border border-border bg-white p-4 shadow-sm lg:col-span-2"
+                    <!-- Level 4 -->
+                    <section
+                        class="module-step hidden space-y-6 rounded-3xl border border-border bg-card p-8 shadow-card"
+                        data-module="4"
+                        id="step-4"
+                        role="tabpanel"
+                        aria-labelledby="tab-4"
+                        aria-hidden="true"
                     >
-                        <div class="relative aspect-video w-full overflow-hidden rounded-xl bg-black">
-                            <iframe
-                                class="absolute inset-0 h-full w-full"
-                                src="https://www.youtube.com/embed/3f31oufqFSM"
-                                title="Step 5 walkthrough video"
-                                loading="lazy"
-                                allow="
-                                    accelerometer;
-                                    autoplay;
-                                    clipboard-write;
-                                    encrypted-media;
-                                    gyroscope;
-                                    picture-in-picture;
-                                "
-                                allowfullscreen
-                            ></iframe>
+                        <div class="space-y-2">
+                            <h2 class="text-3xl font-black">💼 Deal Room Participation</h2>
+                            <p class="text-lg text-muted">
+                                Drive real business outcomes through partner deal rooms. Codes can be
+                                found inside each room.
+                            </p>
                         </div>
-                        <p class="mt-3 text-sm text-muted">
-                            Breakdown of bonus scenarios so you can plan warm introductions and
-                            attendance streaks.
-                        </p>
-                    </div>
-                </div>
-            </section>
+                        <div class="grid gap-6 lg:grid-cols-5 lg:items-start">
+                            <!-- Video on the left -->
+                            <div
+                                class="rounded-2xl border border-border bg-white p-4 shadow-sm lg:col-span-2"
+                            >
+                                <div
+                                    class="relative aspect-video w-full overflow-hidden rounded-xl bg-black"
+                                >
+                                    <iframe
+                                        class="absolute inset-0 h-full w-full"
+                                        src="https://www.youtube.com/embed/3f31oufqFSM"
+                                        title="Level 4 walkthrough video"
+                                        loading="lazy"
+                                        allow="
+                                            accelerometer;
+                                            autoplay;
+                                            clipboard-write;
+                                            encrypted-media;
+                                            gyroscope;
+                                            picture-in-picture;
+                                        "
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                                <p class="mt-3 text-sm text-muted">
+                                    Learn where to find partner codes, how to submit them, and how to
+                                    turn room activity into real revenue.
+                                </p>
+                            </div>
 
-            <section
-                class="module-step hidden space-y-6 rounded-3xl border border-border bg-card p-8 shadow-card"
-                data-module="6"
-                id="step-6"
-                role="tabpanel"
-                aria-labelledby="tab-6"
-                aria-hidden="true"
-            >
-                <div class="space-y-2">
-                    <h2 class="text-3xl font-black">💰 Revenue Share Program</h2>
-                    <p class="text-lg text-muted">Participants earn 20% revenue share on:</p>
-                </div>
-                <div class="grid gap-6 lg:grid-cols-5">
-                    <div class="flex flex-col gap-6 lg:col-span-3">
-                        <ul class="list-disc space-y-3 pl-6 text-lg text-ink">
-                            <li>
-                                Summit ticket sales made via your referral link. Track sales in the
-                                dashboard and highlight VIP upgrades.
-                            </li>
-                            <li>
-                                Sponsor warm referral closings—make the introduction and let the Eprenz
-                                team close the loop.
-                            </li>
-                        </ul>
-                        <div>
-                            <a
-                                class="inline-flex rounded-xl bg-brand px-5 py-3 text-base font-bold text-white"
-                                href="mailto:partnership@eprenz.com"
-                                >Submit Sponsor Lead</a
-                            >
+                            <!-- Cards on the right -->
+                            <div class="flex flex-col gap-6 lg:col-span-3">
+                                <div class="grid gap-4">
+                                    <div
+                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5"
+                                    >
+                                        <strong class="text-xl">Enter partner rooms</strong>
+                                        <p class="text-muted">
+                                            Visit every room to review offers, collect unique codes,
+                                            and learn about the solution.
+                                        </p>
+                                        <div
+                                            class="flex flex-wrap gap-2 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
+                                        >
+                                            <span
+                                                class="rounded-full bg-brand/15 px-3 py-1"
+                                                >25 pts per unique code</span
+                                            >
+                                            <span
+                                                class="rounded-full bg-brand/15 px-3 py-1"
+                                                >1 pt per 1 dollar purchase</span
+                                            >
+                                            <span
+                                                class="rounded-full bg-brand/15 px-3 py-1"
+                                                >+25 pts first purchase</span
+                                            >
+                                            <span
+                                                class="rounded-full bg-brand/15 px-3 py-1"
+                                                >+50 pts all codes collected</span
+                                            >
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a
+                                        class="inline-flex rounded-xl bg-brand px-5 py-3 text-base font-bold text-white"
+                                        href="https://zfrmz.com/IF4dYHl3Cv6je8fBiGAY"
+                                        target="_blank"
+                                        rel="noreferrer"
+                                        >Submit Codes</a
+                                    >
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div
-                        class="rounded-2xl border border-border bg-white p-4 shadow-sm lg:col-span-2"
+                    </section>
+
+                    <!-- Level 5 -->
+                    <section
+                        class="module-step hidden space-y-6 rounded-3xl border border-border bg-card p-8 shadow-card"
+                        data-module="5"
+                        id="step-5"
+                        role="tabpanel"
+                        aria-labelledby="tab-5"
+                        aria-hidden="true"
                     >
-                        <div class="relative aspect-video w-full overflow-hidden rounded-xl bg-black">
-                            <iframe
-                                class="absolute inset-0 h-full w-full"
-                                src="https://www.youtube.com/embed/3f31oufqFSM"
-                                title="Step 6 walkthrough video"
-                                loading="lazy"
-                                allow="
-                                    accelerometer;
-                                    autoplay;
-                                    clipboard-write;
-                                    encrypted-media;
-                                    gyroscope;
-                                    picture-in-picture;
-                                "
-                                allowfullscreen
-                            ></iframe>
+                        <div class="space-y-2">
+                            <h2 class="text-3xl font-black">🎁 Bonus Points</h2>
+                            <p class="text-lg text-muted">
+                                Extra rewards for high value contributions and commitment.
+                            </p>
                         </div>
-                        <p class="mt-3 text-sm text-muted">
-                            Overview of the revenue share structure and how to submit leads for
-                            tracking.
-                        </p>
-                    </div>
-                </div>
-            </section>
+                        <div class="grid gap-6 lg:grid-cols-5 lg:items-start">
+                            <!-- Video on the left -->
+                            <div
+                                class="rounded-2xl border border-border bg-white p-4 shadow-sm lg:col-span-2"
+                            >
+                                <div
+                                    class="relative aspect-video w-full overflow-hidden rounded-xl bg-black"
+                                >
+                                    <iframe
+                                        class="absolute inset-0 h-full w-full"
+                                        src="https://www.youtube.com/embed/3f31oufqFSM"
+                                        title="Level 5 walkthrough video"
+                                        loading="lazy"
+                                        allow="
+                                            accelerometer;
+                                            autoplay;
+                                            clipboard-write;
+                                            encrypted-media;
+                                            gyroscope;
+                                            picture-in-picture;
+                                        "
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                                <p class="mt-3 text-sm text-muted">
+                                    Breakdown of bonus scenarios so you can plan warm introductions
+                                    and attendance streaks that earn the most points.
+                                </p>
+                            </div>
+
+                            <!-- Cards on the right -->
+                            <div class="flex flex-col gap-6 lg:col-span-3">
+                                <div class="grid gap-4 md:grid-cols-2">
+                                    <div
+                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5"
+                                    >
+                                        <strong class="text-xl">Sponsor warm referral</strong>
+                                        <p class="text-muted">
+                                            Provide a qualified introduction and keep both parties
+                                            looped in.
+                                        </p>
+                                        <span
+                                            class="rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
+                                            >+50 pts</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5"
+                                    >
+                                        <strong class="text-xl">Closed deal via referral</strong>
+                                        <p class="text-muted">
+                                            When the sponsor closes a deal that started from your
+                                            introduction.
+                                        </p>
+                                        <span
+                                            class="rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
+                                            >+250 pts</span
+                                        >
+                                    </div>
+                                    <div
+                                        class="space-y-3 rounded-2xl border border-border bg-accent p-5"
+                                    >
+                                        <strong class="text-xl">Attend both summit days</strong>
+                                        <p class="text-muted">Check in on day 1 and day 2.</p>
+                                        <span
+                                            class="rounded-full bg-brand/15 px-3 py-1 text-xs font-bold uppercase tracking-wide text-[#0f2942]"
+                                            >+40 pts</span
+                                        >
+                                    </div>
+                                </div>
+                                <div>
+                                    <a
+                                        class="inline-flex rounded-xl bg-brand px-5 py-3 text-base font-bold text-white"
+                                        href="mailto:partnership@eprenz.com"
+                                        >Email Updates</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Level 6 -->
+                    <section
+                        class="module-step hidden space-y-6 rounded-3xl border border-border bg-card p-8 shadow-card"
+                        data-module="6"
+                        id="step-6"
+                        role="tabpanel"
+                        aria-labelledby="tab-6"
+                        aria-hidden="true"
+                    >
+                        <div class="space-y-2">
+                            <h2 class="text-3xl font-black">💰 Revenue Share Program</h2>
+                            <p class="text-lg text-muted">
+                                Participants earn 20 percent revenue share on:
+                            </p>
+                        </div>
+                        <div class="grid gap-6 lg:grid-cols-5 lg:items-start">
+                            <!-- Video on the left -->
+                            <div
+                                class="rounded-2xl border border-border bg-white p-4 shadow-sm lg:col-span-2"
+                            >
+                                <div
+                                    class="relative aspect-video w-full overflow-hidden rounded-xl bg-black"
+                                >
+                                    <iframe
+                                        class="absolute inset-0 h-full w-full"
+                                        src="https://www.youtube.com/embed/3f31oufqFSM"
+                                        title="Level 6 walkthrough video"
+                                        loading="lazy"
+                                        allow="
+                                            accelerometer;
+                                            autoplay;
+                                            clipboard-write;
+                                            encrypted-media;
+                                            gyroscope;
+                                            picture-in-picture;
+                                        "
+                                        allowfullscreen
+                                    ></iframe>
+                                </div>
+                                <p class="mt-3 text-sm text-muted">
+                                    Guidance on how to increase your long term earnings, stack more
+                                    points across levels, and keep submitting high quality leads as
+                                    the program evolves.
+                                </p>
+                            </div>
+
+                            <!-- Content on the right -->
+                            <div class="flex flex-col gap-6 lg:col-span-3">
+                                <ul class="list-disc space-y-3 pl-6 text-lg text-ink">
+                                    <li>
+                                        Summit ticket sales made via your referral link. Track sales
+                                        in the dashboard and highlight VIP upgrades.
+                                    </li>
+                                    <li>
+                                        Sponsor warm referral closings. Make the introduction and let
+                                        the Eprenz team close the loop.
+                                    </li>
+                                </ul>
+                                <div>
+                                    <a
+                                        class="inline-flex rounded-xl bg-brand px-5 py-3 text-base font-bold text-white"
+                                        href="mailto:partnership@eprenz.com"
+                                        >Submit Sponsor Lead</a
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
             </div>
         </main>
